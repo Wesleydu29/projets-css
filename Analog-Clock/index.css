@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+}
+#clock {
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    border: 10px solid #282828;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 5px #000000, 1px 1px 5px #000000;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clockInner {
+    position: relative;
+    background: #282828;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.clockInner::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.clockInner::after,
+.clockInner::before,
+.clockInner .marking {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: #3FF1F0;
+    top: 0%;
+    left: 49%;
+    z-index: 0;
+}
