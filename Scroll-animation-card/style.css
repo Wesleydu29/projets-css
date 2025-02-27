@@ -50,3 +50,42 @@ body {
     margin-top: 20px;
     border-radius: 8mm;
 }
+.right .card {
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    width: 350px;
+    height: 350px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-bottom: 2px;
+}
+.right .card .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right .card .card-content h2 {
+    font-family: poppins;
+    font-size: 24px;
+}
+.right .card .card-content p {
+    font-family: poppins;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    bottom: 0;  
+}
+.right .card-one {
+    background-color: #407AFF
+}
+.right .card-two {
+    background-color: red
+}
+.right .card-three {
+    background-color: purple
+}
+.right .card-four{
+    background-color: pink
+}
