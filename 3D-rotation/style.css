@@ -6,9 +6,18 @@
     justify-content: center;
 }
 #layer1 .can-container{
-    width: 200px;
+    width: 240px;
 
 }
 #layer1 .can-container .can-img{
     width: 100%;
+}
+#layer1 .can-container .wrapper {
+    position: absolute;
+    height: 40%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+
 }
