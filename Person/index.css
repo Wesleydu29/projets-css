@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    background: #beeeef;
+}
+.canvas {
+    --line:#222;
+    --skin:#fca;
+    --skin-dark:#eb9;
+    --skin-light:#fdb;
+    --shirt:#fff;
+    color: var(--line);
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+.canvas div {
+    position: absolute;
+    box-sizing: border-box;
+}
