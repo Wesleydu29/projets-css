@@ -25,3 +25,27 @@ body {
     position: absolute;
     box-sizing: border-box;
 }
+.face {
+    top: 13%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    background: var(--skin);
+    border: 1vmin solid;
+    border-radius: 0 20% 50% 70% / 50%;
+    box-shadow: -0.125vmin 0.25vmin, inset -1.5vmin 0.5vmin var(--skin-light), 
+    inset 3vmin 0.5vmin var(--skin-dark);
+    transform: translate(-50%, 0);
+}
+.ear {
+    width: 35%;
+    height: 40%;
+    background: var(--skin-dark);
+    border-radius: 70% 70% 40% 90% / 50% 50% 100% 90%;
+    border: 1vmin solid;
+    border-right-color: var(--skin-dark);
+    top: 34%;
+    left: -25%;
+    transform: rotate(-5deg);
+    box-shadow: -0.25vmin -0.25vmin;
+}
