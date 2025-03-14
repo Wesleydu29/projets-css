@@ -49,3 +49,52 @@ body {
     transform: rotate(-5deg);
     box-shadow: -0.25vmin -0.25vmin;
 }
+.ear::before {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    top: 20%;
+    left: 8%;
+    border: 0.25vmin solid transparent;
+    border-top: 1vmin solid;
+    transform: rotate(15deg);
+}
+.ear::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3vmin;
+    height: 3vmin;
+    border: 0.75vmin solid;
+    border-right: 0.25vmin solid transparent;
+    border-radius: 50%;
+    top: 45%;
+    left: 52%;
+    box-shadow: -0.125vmin -0.25vmin;
+}
+.mouth {
+    width: 50%;
+    height: 20%;
+    border-radius: 50%;
+    border: 0.5vmin solid transparent;
+    border-left: 1.5vmin solid transparent;
+    border-bottom: 1vmin solid;
+    transform: rotate(10deg);
+    top: 60%;
+    left: 35%;
+}
+.mouth::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 0.5vmin solid transparent;
+    border-left: 1vmin solid;
+    transform: rotate(25deg);
+    top: 75%;
+}
