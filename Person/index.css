@@ -98,3 +98,42 @@ body {
     transform: rotate(25deg);
     top: 75%;
 }
+.nose {
+    width: 20%;
+    height: 14%;
+    border-radius: 50%;
+    top: 53%;
+    left: 55%;
+    box-shadow: 0.5vmin -0.5vmin, 0.5vmin -0.35vmin, inset -0.75vmin 0.65vmin var(--skin-dark);
+    border: 0.5vmin solid transparent;
+    border-top: 0.5vmin solid;
+    border-right: 0.5vmin solid;
+}
+.eyebrow {
+    width: 38%;
+    height: 20%;
+    border-radius: 100% / 50%;
+    top: 20%;
+    left: 20%;
+    box-shadow: -0.25vmin -2vmin 0 -0.5vmin;
+    transform: rotate(-5deg);
+}
+.eyebrow + .eyebrow {
+    transform: scaleX(-1) rotate(-3deg);
+    left: 68%;
+    width: 35%;
+}
+.eye {
+    width: 10%;
+    height: 10%;
+    background: var(--line);
+    border-radius: 50%;
+    top: 35%;
+    left: 37%;
+    background-image: radial-gradient(circle at 70% 20%, #fff 15%, transparent 0);
+    background-repeat: no-repeat;
+}
+.eye + .eye {
+    left: 77%;
+    top: 35.25%;
+}
