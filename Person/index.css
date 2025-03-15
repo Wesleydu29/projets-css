@@ -137,3 +137,16 @@ body {
     left: 77%;
     top: 35.25%;
 }
+.hair-side {
+    width: 40%;
+    height: 50%;
+    background: var(--line);
+    border-radius: 100% / 90% 60% 150% 150%;
+    left: -35%;
+    top: -5%;
+    transform: rotate(-10deg);
+    box-shadow: 2.25vmin -1vmin var(--skin-dark);
+}
+.hair-top {
+    
+}
