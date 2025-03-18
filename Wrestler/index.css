@@ -2,5 +2,49 @@
     --skin: #fca;
     --shade:#fb9;
     --color1: #69c;
-    --color: silver;
+    --color2: silver;
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.container div {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+}
+.head {
+    width: 23%;
+    height: 25%;
+    border: 0.75vmin solid;
+    border-bottom-width: 1vmin;
+    border-radius: 100% / 110% 120% 50% 55%;
+    background: var(--color1);
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image:
+    radial-gradient(circle at 50% 58%, var(--skin) 8%, black 0 12%, #0000 0),
+    radial-gradient(circle at 30% 47%, black 10%, #0000 0),
+    radial-gradient(circle at 70% 47%, black 11%, #0000 0),
+    radial-gradient(circle at 50% -2%, var(--color2) 10%, #0000 0),
+    radial-gradient(circle at 50% -1%, black 0 13%, #0000 0),
+    radial-gradient(ellipse 150% 300% at 50% 70%, transparent 28%, black 0 30%, var(--color2) 0);
+    overflow: hidden;
+    box-shadow: 0 1vmin var(--shade);
+}
+.head::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 60%;
+    border: 0.6vmin solid;
+    border-top-width: 0.75vmin;
+    border-radius: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
 }
