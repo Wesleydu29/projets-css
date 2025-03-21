@@ -158,3 +158,32 @@
     background: gold;
     box-shadow: inset -0.75vmin -0.25vmin #0003;
 }
+.boot {
+    width: 8%;
+    height: 5%;
+    border: 0.5vmin solid;
+    border-radius: 90% 0 0 15%;
+    background: var(--color2);
+    border-top-width: 0.75vmin;
+    border-bottom-width: 0.6vmin;
+    top: 79%;
+    left: 30%;
+    transform: rotate(-5deg);
+    box-shadow: inset 0 0.5vmin 0 0.5vmin;
+    background-image: linear-gradient(-170deg, black 15%, #0000 0);
+}
+.boot + .boot {
+    transform: scaleX(-1);
+    left: 62.5%;
+    background-image: linear-gradient(-150deg, black 15%, #0000 0);
+}
+.shadow {
+    width: 60%;
+    height: 8%;
+    border-radius: 100%;
+    background: #0003;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: blur(0.5vmin);
+}
