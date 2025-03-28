@@ -27,5 +27,9 @@ body {
     border-radius: 25px;
     margin: 0 10px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: 0.6s cubic-bezier(0.28, -00.03, 0, 0.99);
+    cursor: pointer;
+    background-size: cover;
+    
     
 }
