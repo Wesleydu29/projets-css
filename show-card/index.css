@@ -30,6 +30,61 @@ body {
     transition: 0.6s cubic-bezier(0.28, -00.03, 0, 0.99);
     cursor: pointer;
     background-size: cover;
-    
-    
+    overflow: hidden;
 }
+.card > .content {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card > .content > .number {
+    color: white;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border-radius: 50%;
+    background: #000;
+}
+.card > .content > .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 500px;
+    height: 100px;
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+    transform: translateY(30px);
+}
+.description p {
+    padding-top: 5px;
+    color: #b0b0ba;
+}
+.description h2 {
+    text-transform: uppercase;
+}
+input{
+    display: none;
+}
+input:checked + label {
+    width: 600px;
+}
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+.card[for="card1"] {
+    background-image: url('./assets/canyon.jpg');
+}
+.card[for="card2"] {
+    background-image: url('./assets/earth.jpg');
+}
+.card[for="card3"] {
+    background-image: url('./assets/eclipse.jpg');
+}
+.card[for="card4"] {
+    background-image: url('./assets/mountain.jpg');
+}
+    
