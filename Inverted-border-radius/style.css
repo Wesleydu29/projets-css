@@ -27,6 +27,29 @@ body {
     background-repeat: no-repeat;
     border-radius: 15px;
 }
+.card .img::before {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -10px 10px 0 #fff;
+}
+.card .img::after {
+    content: '';
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -10px 10px 0 #fff;
+}
+    
 .card .content {
     width: 100%;
     background: blue;
@@ -41,4 +64,25 @@ body {
     height: 22%;
     border-top: 10px solid white;
     border-right: 10px solid white;
+    border-top-right-radius: 25px;
+}
+.content .price::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #fff;
+}
+.content .price::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+    right: -25px;
+    background:transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 blue;
 }
