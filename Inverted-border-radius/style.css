@@ -86,3 +86,21 @@ body {
     border-radius: 50%;
     box-shadow: -10px 10px 0 blue;
 }
+.content .price p{
+    position: relative;
+    background: #fff;
+    display: block;
+    color: #000000;
+    margin: 15px 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.content p {
+    background: #fff;
+    display: block;
+    padding: 5px;
+    margin: 10px 15px;
+    border-radius: 5px;
+}
