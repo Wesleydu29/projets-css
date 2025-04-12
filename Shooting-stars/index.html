@@ -8,8 +8,28 @@
 </head>
 <body>
     <canvas id="canvas"></canvas>
-    
-    <script></script>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let mouse = { x:canvas.width / 2, y:canvas.height / 2 };
+        canvas.addEventListener('mousemove', e => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+
+        let stars = [];
+        for (let i = 0; i < 1000; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                z: Math.random() * 1000
+            });
+        }
+    </script>
     
 </body>
 </html>
