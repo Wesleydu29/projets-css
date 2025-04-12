@@ -36,7 +36,7 @@
                 star.z -= 3;
                 if (star.z <= 0) star.z = 1000;
                 let scale = 1000 / star.z;
-                let x = (star.z - mouse.x) * scale + mouse.x;
+                let x = (star.x - mouse.x) * scale + mouse.x;
                 let y = (star.y - mouse.y) * scale + mouse.y;
                 let dist = Math.sqrt((x - mouse.x) ** 2 + (y - mouse.y) ** 2);
                 ctx.beginPath();
