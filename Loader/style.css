@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: 66px center;
+    margin-left: 40px;
+}
+.ball::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #f00;
+    transform: translate(-50%);
+}
