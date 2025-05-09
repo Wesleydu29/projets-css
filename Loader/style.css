@@ -18,27 +18,25 @@
     width: 120px;
     height: 120px;
     transform: translate(-50%, -50%) rotate(0deg);
-    transform-origin: 66px center;
+    transform-origin: 66px 50%;
     margin-left: 40px;
 }
 .ball::before {
     content: '';
+    width: 68px;
+    height: 68px;
     position: absolute;
     top: 50%;
     left: -10px;
-    width: 68px;
-    height: 68px;
+    transform: translateY(-50%);
     border-radius: 50%;
     background-color: #f00;
-    transform: translateY(-50%);
 }
 .ball-1 {
     margin-left: -50px;
 }
 .ball-2 {
     margin-left: 25px;
-    transform: translateY(-50%) rotate(180deg);
-    margin-left: -100px;
     animation: rotate 2s linear infinite;
     z-index: 2;
 }
@@ -46,35 +44,37 @@
     0% {
         margin-left: -18px;
         transform: translateY(-50%) rotate(0deg);
-        transform-origin: 66px center;
+        transform-origin: 66px 50%;
     }
     25% {
         margin-left: -25px;
         transform: translateY(-50%) rotate(-180deg);
-        transform-origin: 66px center;
+        transform-origin: 66px 50%;
     }
     50% {
         margin-left: -33px;
         transform: translateY(-50%) rotate(-360deg);
-        transform-origin: 66px center;
+        transform-origin: 66px 50%;
     }
     50.1% {
-        margin-left: -25px;
+        transform-origin: -12px 50%;
     }
     75% {
         margin-left: -36px;
         transform: translateY(-50%) rotate(-180deg);
-        transform-origin: -12px center;
+        transform-origin: -12px 50%;
     }
-    75.1% {
-        margin-left: -66px;
+    75.01% {
+    
         transform: translateY(-50%) rotate(-180deg);
-        transform-origin: -12px center;
+        transform-origin: -12px 50%;
     }
     100% {
         margin-left: -18px;
         transform: translateY(-50%) rotate(0deg);
-        transform-origin: -12px center;
+        transform-origin: -12px 50%;
     }
-    
+}
+.ball-3 {
+    margin-left: 120px;
 }
